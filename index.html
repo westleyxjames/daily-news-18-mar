@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeadlineHub - Your Trusted News Source</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div>
+                    <span style="color: #6b7280;">Thursday, January 29, 2026</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"></a>
+                        <a href="#" aria-label="Twitter"></a>
+                        <a href="#" aria-label="Instagram"></a>
+                        <a href="#" aria-label="YouTube"></a>
+                    </div>
+                    <button class="btn-subscribe">SUBSCRIBE</button>
+                    <button class="btn-signin">Sign in</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo and Search -->
+        <div class="header-main">
+            <div class="container">
+                <a href="index.html" class="logo">HeadlineHub</a>
+                
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <span class="search-icon">🔍</span>
+                </div>
+
+                <div class="contact-info">
+                    <div class="title">Contact Us</div>
+                    <div>+1-934-293-3929</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Category Slide Line -->
+    <div class="category-slide">
+        <div class="container">
+            <a href="#breaking">BREAKING NEWS</a>
+            <a href="#national">NATIONAL</a>
+            <a href="#international">INTERNATIONAL</a>
+            <a href="#politics">POLITICS</a>
+            <a href="#business">BUSINESS</a>
+            <a href="#technology">TECHNOLOGY</a>
+            <a href="#sports">SPORTS</a>
+        </div>
+    </div>
+
+    <!-- Breaking News Banner -->
+    <div class="breaking-news">
+        <div class="container">
+            <span class="breaking-badge">BREAKING NEWS</span>
+            <div class="news-ticker">
+                <div class="news-ticker-content" id="ticker-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="two-column" style="margin-top: 2rem;">
+                <!-- Main Content Area -->
+                <div>
+                    <!-- Featured Story -->
+                    <section style="margin-bottom: 3rem;">
+                        <div id="featured-story"></div>
+                    </section>
+
+                    <!-- Breaking News Section -->
+                    <section id="breaking" style="margin-bottom: 3rem;">
+                        <h2 class="section-title">Breaking News</h2>
+                        <div class="news-grid" id="breaking-news-grid"></div>
+                    </section>
+
+                    <!-- National News -->
+                    <section id="national" style="margin-bottom: 3rem;">
+                        <h2 class="section-title">National News</h2>
+                        <div class="news-grid" id="national-news-grid"></div>
+                    </section>
+
+                    <!-- Business News -->
+                    <section id="business" style="margin-bottom: 3rem;">
+                        <h2 class="section-title">Business</h2>
+                        <div class="news-grid" id="business-news-grid"></div>
+                    </section>
+
+                    <!-- Technology News -->
+                    <section id="technology" style="margin-bottom: 3rem;">
+                        <h2 class="section-title">Technology</h2>
+                        <div class="news-grid" id="technology-news-grid"></div>
+                    </section>
+
+                    <!-- Sports News -->
+                    <section id="sports" style="margin-bottom: 3rem;">
+                        <h2 class="section-title">Sports</h2>
+                        <div class="news-grid" id="sports-news-grid"></div>
+                    </section>
+
+                    <!-- International News -->
+                    <section id="international" style="margin-bottom: 3rem;">
+                        <h2 class="section-title">International</h2>
+                        <div class="news-grid" id="international-news-grid"></div>
+                    </section>
+                </div>
+
+                <!-- Sidebar -->
+                <aside>
+                    <div class="sidebar-section">
+                        <h3 class="sidebar-title">Most Popular</h3>
+                        <div id="popular-news"></div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- About Section -->
+                    <div class="footer-section">
+                        <h3>HeadlineHub</h3>
+                        <p>Your trusted source for breaking news, in-depth analysis, and comprehensive coverage of events around the world.</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook">📘</a>
+                            <a href="#" aria-label="Twitter">🐦</a>
+                            <a href="#" aria-label="Instagram">📷</a>
+                            <a href="#" aria-label="YouTube">📺</a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="footer-section">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="index.html#breaking">Breaking News</a></li>
+                            <li><a href="index.html#national">National</a></li>
+                            <li><a href="index.html#business">Business</a></li>
+                            <li><a href="index.html#technology">Technology</a></li>
+                            <li><a href="index.html#sports">Sports</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-section">
+                        <h3>Contact Info</h3>
+                        <div class="contact-item">
+                            <span>📞</span>
+                            <span>+1-934-293-3929</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>✉️</span>
+                            <span>article@HeadlineHub.in</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📍</span>
+                            <span>United States of America</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 HeadlineHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/news-data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Load homepage content
+        document.addEventListener('DOMContentLoaded', function() {
+            // Featured story
+            document.getElementById('featured-story').innerHTML = createNewsCard(breakingNews[0], true);
+
+            // Breaking news
+            const breakingGrid = document.getElementById('breaking-news-grid');
+            breakingNews.slice(1).forEach(article => {
+                breakingGrid.innerHTML += createNewsCard(article);
+            });
+
+            // National news
+            const nationalGrid = document.getElementById('national-news-grid');
+            nationalNews.forEach(article => {
+                nationalGrid.innerHTML += createNewsCard(article);
+            });
+
+            // Business news
+            const businessGrid = document.getElementById('business-news-grid');
+            businessNews.forEach(article => {
+                businessGrid.innerHTML += createNewsCard(article);
+            });
+
+            // Technology news
+            const technologyGrid = document.getElementById('technology-news-grid');
+            technologyNews.forEach(article => {
+                technologyGrid.innerHTML += createNewsCard(article);
+            });
+
+            // Sports news
+            const sportsGrid = document.getElementById('sports-news-grid');
+            sportsNews.forEach(article => {
+                sportsGrid.innerHTML += createNewsCard(article);
+            });
+
+            // International news
+            const internationalGrid = document.getElementById('international-news-grid');
+            internationalNews.forEach(article => {
+                internationalGrid.innerHTML += createNewsCard(article);
+            });
+
+            // Popular news sidebar
+            const popularNewsContainer = document.getElementById('popular-news');
+            allNews.slice(0, 5).forEach(article => {
+                popularNewsContainer.innerHTML += createSidebarItem(article);
+            });
+        });
+    </script>
+</body>
+</html>

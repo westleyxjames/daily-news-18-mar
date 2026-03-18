@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Article - HeadlineHub</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container">
+                <div>
+                    <span style="color: #6b7280;">Thursday, January 29, 2026</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                    <button class="btn-subscribe">SUBSCRIBE</button>
+                    <button class="btn-signin">👤 Sign in</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Logo and Search -->
+        <div class="header-main">
+            <div class="container">
+                <a href="index.html" class="logo">HeadlineHub</a>
+                
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                    <span class="search-icon">🔍</span>
+                </div>
+
+                <div class="contact-info">
+                    <div class="title">Contact Us</div>
+                    <div>+1-934-293-3929</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Category Slide Line -->
+    <div class="category-slide">
+        <div class="container">
+            <a href="index.html#breaking">BREAKING NEWS</a>
+            <a href="index.html#national">NATIONAL</a>
+            <a href="index.html#international">INTERNATIONAL</a>
+            <a href="index.html#politics">POLITICS</a>
+            <a href="index.html#business">BUSINESS</a>
+            <a href="index.html#technology">TECHNOLOGY</a>
+            <a href="index.html#sports">SPORTS</a>
+        </div>
+    </div>
+
+    <!-- Article Header -->
+    <div class="article-header">
+        <div class="container">
+            <a href="javascript:history.back()" class="back-button">← Back</a>
+        </div>
+    </div>
+
+    <!-- Article Content -->
+    <article class="article-container" id="article-content">
+        <!-- Content will be loaded here -->
+    </article>
+
+    <!-- Related Articles -->
+    <div class="related-articles">
+        <div class="container" style="max-width: 56rem;">
+            <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1.5rem;">Related Articles</h2>
+            <div class="related-grid" id="related-articles"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- About Section -->
+                    <div class="footer-section">
+                        <h3>HeadlineHub</h3>
+                        <p>Your trusted source for breaking news, in-depth analysis, and comprehensive coverage of events around the world.</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook">📘</a>
+                            <a href="#" aria-label="Twitter">🐦</a>
+                            <a href="#" aria-label="Instagram">📷</a>
+                            <a href="#" aria-label="YouTube">📺</a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="footer-section">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="index.html#breaking">Breaking News</a></li>
+                            <li><a href="index.html#national">National</a></li>
+                            <li><a href="index.html#business">Business</a></li>
+                            <li><a href="index.html#technology">Technology</a></li>
+                            <li><a href="index.html#sports">Sports</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-section">
+                        <h3>Contact Info</h3>
+                        <div class="contact-item">
+                            <span>📞</span>
+                            <span>+1-934-293-3929</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>✉️</span>
+                            <span>article@HeadlineHub.in</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>📍</span>
+                            <span>United States of America</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 HeadlineHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/news-data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Load article content
+        document.addEventListener('DOMContentLoaded', function() {
+            const articleId = getUrlParameter('id');
+            const article = findArticleById(articleId);
+
+            if (!article) {
+                document.getElementById('article-content').innerHTML = `
+                    <div style="text-align: center; padding: 3rem 0;">
+                        <h1 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">Article not found</h1>
+                        <a href="index.html" style="color: #dc2626; text-decoration: underline;">Return to homepage</a>
+                    </div>
+                `;
+                return;
+            }
+
+            // Update page title
+            document.getElementById('page-title').textContent = article.title + ' - HeadlineHub';
+
+            // Render article
+            document.getElementById('article-content').innerHTML = `
+                <div style="margin-bottom: 1rem;">
+                    <span class="category-badge">${article.category}</span>
+                </div>
+
+                <h1 class="article-title">${article.title}</h1>
+
+                <p class="article-excerpt">${article.excerpt}</p>
+
+                <div class="article-meta">
+                    <div class="article-meta-item">
+                        <span>👤</span>
+                        <span style="font-weight: 600;">${article.author}</span>
+                    </div>
+                    <div class="article-meta-item">
+                        <span>📅</span>
+                        <span>${formatDate(article.date)}</span>
+                    </div>
+                    <div class="article-meta-item">
+                        <span>⏱️</span>
+                        <span>${article.readTime} read</span>
+                    </div>
+                </div>
+
+                <div class="share-buttons">
+                    <span style="color: #6b7280; font-weight: 500;">Share:</span>
+                    <button class="share-button" style="background: #3b5998; color: white;">📘</button>
+                    <button class="share-button" style="background: #1da1f2; color: white;">🐦</button>
+                    <button class="share-button" style="background: #0077b5; color: white;">💼</button>
+                    <button class="share-button" style="background: #e5e7eb; color: #374151;">🔗</button>
+                </div>
+
+                <img src="${article.image}" alt="${article.title}" class="article-image">
+
+                <div class="article-body">
+                    <p>In a significant development that has captured global attention, ${article.title.toLowerCase()} has become a focal point of discussion among experts and the general public alike. This groundbreaking event marks a pivotal moment in the ongoing narrative surrounding this critical issue.</p>
+
+                    <h2>Key Developments</h2>
+                    <p>The situation has evolved rapidly over recent days, with multiple stakeholders weighing in on the implications. Industry leaders and policy makers have been closely monitoring the developments, recognizing the far-reaching consequences this could have on various sectors of the economy and society at large.</p>
+
+                    <p>${article.excerpt} The announcement comes at a crucial time when the nation is grappling with several challenges, making this development all the more significant for the future trajectory of these initiatives.</p>
+
+                    <h2>Expert Analysis</h2>
+                    <p>According to leading analysts in the field, this represents a watershed moment that could reshape the landscape for years to come. The consensus among experts is that while there are certainly challenges ahead, the overall direction appears promising with significant potential benefits for stakeholders across multiple sectors.</p>
+
+                    <blockquote>"This development has the potential to transform the way we approach these critical issues. The implications extend far beyond what we might initially perceive, touching on economic, social, and environmental factors that affect us all." - ${article.author}</blockquote>
+
+                    <h2>Looking Ahead</h2>
+                    <p>As we move forward, observers will be watching closely to see how this situation continues to unfold. The next few weeks are expected to be crucial in determining the long-term impact and success of these initiatives. Stakeholders remain cautiously optimistic about the potential outcomes while acknowledging the challenges that lie ahead.</p>
+
+                    <p>The broader implications of this development extend to various aspects of daily life, affecting everything from economic policy to individual decision-making processes. As more information becomes available, the full scope of these changes will become clearer, allowing for more comprehensive analysis and strategic planning.</p>
+
+                    <h2>Conclusion</h2>
+                    <p>This marks just the beginning of what promises to be an ongoing story with significant ramifications. As events continue to develop, HeadlineHub will provide comprehensive coverage and analysis to keep you informed of all the latest developments. Stay tuned for updates as this situation evolves.</p>
+                </div>
+
+                <div class="article-tags">
+                    <div class="tags-container">
+                        <span style="font-size: 0.875rem; color: #6b7280; font-weight: 500;">Tags:</span>
+                        <span class="tag">${article.category}</span>
+                        <span class="tag">Breaking News</span>
+                        <span class="tag">Latest</span>
+                    </div>
+                </div>
+            `;
+
+            // Load related articles
+            const relatedArticles = allNews.filter(a => a.category === article.category && a.id !== article.id).slice(0, 3);
+            const relatedContainer = document.getElementById('related-articles');
+            
+            relatedArticles.forEach(related => {
+                relatedContainer.innerHTML += `
+                    <a href="article.html?id=${related.id}" style="display: block; background: #f9fafb; border-radius: 0.5rem; overflow: hidden; text-decoration: none; color: inherit; transition: box-shadow 0.2s;">
+                        <img src="${related.image}" alt="${related.title}" style="width: 100%; height: 10rem; object-fit: cover;">
+                        <div style="padding: 1rem;">
+                            <h3 style="font-weight: bold; font-size: 0.875rem; margin-bottom: 0.5rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">${related.title}</h3>
+                            <p style="font-size: 0.75rem; color: #6b7280;">${related.readTime} read</p>
+                        </div>
+                    </a>
+                `;
+            });
+        });
+    </script>
+</body>
+</html>
